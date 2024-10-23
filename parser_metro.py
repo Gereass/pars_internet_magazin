@@ -42,7 +42,7 @@ def take_price(data):
     
     return whole + '.' + fractional if fractional else whole
 
-for page in range(1,2):
+for page in range(1,5):
     url = f"{base_url}{page}"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
